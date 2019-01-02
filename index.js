@@ -40,7 +40,7 @@ console.log(type);
  let string = 'i am in the easycode';
  let newString = '';
 for (let i = 0; i < string.length; i++) {
-    newString += (string[i - 1] == ' ') ? string[i].toUpperCase() : string[i];
+    newString += (string[i - 1] == ' ' || i == 0) ? string[i].toUpperCase() : string[i];
 }
 console.log(newString);
 
