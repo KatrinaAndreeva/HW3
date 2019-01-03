@@ -76,15 +76,30 @@ for (let i = 0; i < jsString.length; i++) {
 console.log(newJsString);
 
 
-//9 +++++++++++++++++++++++++++++
+//9 
 let numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
-for (var i = 0; i <= numArray.length; i++) {
-if (numArray[i] % 2 && numArray[i] <= numArray.length) {
+ for (let i of numArray) {
+     if (i === 0 || numArray[i] % 2 && numArray[i] <= numArray.length) {
 		console.log(numArray[i]);
 	}
-}
+
+ }
  
  //10
  
- 
+ let list = {
+     name: 'denis',
+     work: 'easycode',
+     age: 29
+};
+
+let newList = "";
+for (let key in list) {
+    
+    let 
+    // if (typeof key == "string") {
+    //     newList += list[key].toUpperCase();
+    }
+    
+ console.log(newList);
