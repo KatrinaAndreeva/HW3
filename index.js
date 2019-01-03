@@ -1,10 +1,10 @@
-//1 
+//1 ++++++++++++++++++++++++++
 let a = 'block'
 switch (a) {
     case 'block':
         console.log('block');
         break;
-    case (a && parseInt(a) === 0):
+    case 'none' :
         console.log('none');
         break;
     case 'inline':
@@ -15,28 +15,27 @@ switch (a) {
         break;
 }
 
-//2
+//2 +++++++++++++++++++++
 let type = 'visible';
 (type === 'visible') ? type = 'hidden' : type = 'visible';
 console.log(type);
  
- //3
+ //3 +++++++++++++
  let b = 0;
  (b === 0) ? b = 1 : (b < 0) ? b = 'less than zero' : b *= 10 ;
  console.log(b);
  
- //4
+ //4 ++++++++++++++++++++++++
  let car = {
      name: 'Lexus', 
      age: 10, 
      create: 2008, 
      needRepair: false 
-     
  };
  (car.age > 5) ? car.needRepair = true : car.needRepair = false;
  console.log(car);
  
- //5
+ //5 ++++++++++++++++++++++++++++++++
  let string = 'i am in the easycode';
  let newString = '';
 for (let i = 0; i < string.length; i++) {
@@ -45,18 +44,14 @@ for (let i = 0; i < string.length; i++) {
 console.log(newString);
 
 
-//6
+//6 ++++++++++++++++++++++++
 
 let str = 'tseb eht ma i';
-
-function reverseStr() {
-    let newStr = '', i;
-    for (i = str.length - 1; i >= 0; i--) {
-        newStr += str.charAt(i);
-    }
-    return newStr;
+let newStr = '';
+for (i = str.length - 1; i >= 0; i--) {
+    newStr += str[i];
 }
-console.log(reverseStr(str));
+console.log(newStr);
 
 
 //7 +++++++++++++++++++++++++++++
@@ -79,6 +74,7 @@ for (let i = 0; i < jsString.length; i++) {
     newJsString += " " != jsString[i] ? i && " " != jsString[i - 1] ? jsString[i] : jsString[i].toUpperCase() : "";
 }
 console.log(newJsString);
+
 
 //9 +++++++++++++++++++++++++++++
 let numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
