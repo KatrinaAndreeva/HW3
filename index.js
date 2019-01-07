@@ -16,8 +16,8 @@ switch (a) {
 }
 
 //2 
-let type = 'visible';
-(type === 'visible') ? type = 'hidden': type = 'visible';
+let type;
+type =(type === 'visible') ?  'hidden': 'visible';
 console.log(type);
 
 //3 
